@@ -1,0 +1,290 @@
+
+<!--<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+    <div class="container">
+        TO-DO!! Back icon icon comes here
+        <ul class="navbar-nav">
+         <li class="nav-tem">
+             <a class="nav-link nav-item" routerLink="/quickSearch">Back</a>
+         </li>
+         </ul>
+     
+         &nbsp; &nbsp; &nbsp; &nbsp;
+             title
+             <a class="navbar-brand">Join Search 23</a>
+     
+     </div>
+</nav>-->
+
+
+
+<!--<form #join="ngForm" (ngSubmit)="registerServiceProvider(join.value)">
+    <p style="text-align: center;">Personal Information</p>
+    <div class="form-group">
+        <input  type="text" 
+                name="name" 
+                placeholder="Type your name"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="surname" 
+                placeholder="Type your surname"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="jobTitle" 
+                placeholder="Type your Job Title"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="tell" 
+                placeholder="Type your phone number"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="whatsapp" 
+                placeholder="Type your WhatsApp number"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="email" 
+                placeholder="Type e-mail address"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="password" 
+                placeholder="Type password"
+                ngModel
+                class="form-control">
+    </div>
+    <div class="form-group">
+        <input  type="text" 
+                name="retypepassword" 
+                placeholder="Re-type password"
+                ngModel
+                class="form-control">
+    </div>
+    <p style="text-align: center;">Business Information</p>
+
+
+    <div class="form-group">
+        <input  type="text"
+                name="buinessName"
+                placeholder="Enter buisness name"
+                ngModel
+                class="form-control">
+    </div>
+
+    <div class="form-group">
+        <input  type="text"
+                name="location"
+                placeholder="Enter business address"
+                ngModel
+                class="form-control"
+                style="height: 80px;">
+    </div>
+
+    <div class="form-group">
+        <input  type="text"
+                name="businessDescription"
+                placeholder="Describe your business and services"
+                ngModel
+                class="form-control" 
+                style="height: 100px;">
+    </div>
+
+    <p>Select your category:</p>
+
+    <div class="form-group">
+                
+        <select
+            class="selector textbox-margin" 
+            name="categoty" 
+            id="category" 
+            class="form-control"
+            #businessCategory="ngModel"
+            [ngClass] = "{'is-invalid':businessCategory.errors && businessCategory.touched}"
+            ngModel
+            required
+            >
+            <option value="">Select your business category</option>
+            <option *ngFor=" let category of categories">{{category}}</option>
+        </select>
+
+        <div [hidden] = "!businessCategory.errors?.required" class="invalid-feedback">
+            Please your business category
+        </div>
+    </div>
+
+    <div class="form-group btn-container" >
+        <input  
+            class="btn btn-primary btn-block" 
+            type="submit"  
+            value="Register"
+            >
+    </div> -->
+
+    <div id="join-container">
+        <div class="toolbar-orange">
+            <div class="back-btn">
+                <i routerLink="/home" class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+            </div>
+            <div class="toolbar-title">
+                <h1>Join Search 23</h1>
+            </div>
+            <div class="toolbar-spacer"></div>
+        </div>
+        <div class="join-content">
+            <p class="join-personal-info">Personal information</p>
+            <div class="join-form">
+                <form #join1="ngForm">
+                    <input 
+                    type="text" 
+                    name="firstName" 
+                    placeholder="Type your name"
+                    class="input-field"
+                    #firstName="ngModel"
+                    [ngClass]="{'is-invalid':firstName.errors && firstName.touched}"
+                    ngModel
+                    minlength="2"
+                    required>
+
+                    <div [hidden] = "!firstName.errors?.required" class="invalid-feedback">
+                        Please type your name
+                    </div>
+
+                    <div [hidden] = "!firstName.errors?.minlength" class="invalid-feedback">
+                        Your name should be atleast 2 characters 
+                    </div>
+
+                    <input 
+                    type="text" 
+                    name="surname" 
+                    placeholder="Type your surname"
+                    class="input-field"
+                    #surname="ngModel"
+                    [ngClass]="{'is-invalid':surname.errors && surname.touched}"
+                    ngModel
+                    minlength="2"
+                    required 
+                    >
+
+                    <div [hidden] = "!surname.errors?.required" class="invalid-feedback">
+                        Please type your surname
+                    </div>
+
+                    <div [hidden] = "!surname.errors?.minlength" class="invalid-feedback">
+                        Your surname should be atleast 2 characters 
+                    </div>
+
+                    <input 
+                    type="text" 
+                    name="jobTitle" 
+                    placeholder="Type your Job Title"
+                    class="input-field"
+                    #jobTitle = "ngModel"
+                    [ngClass]="{'is-invalid':jobTitle.errors && jobTitle.touched}"
+                    ngModel
+                    minlength="2"
+                    required
+                    >
+
+                    <div [hidden] = "!jobTitle.errors?.required" class="invalid-feedback">
+                        Please enter your job title
+                    </div>
+
+                    <div [hidden] = "!jobTitle.errors?.minlength" class="invalid-feedback">
+                        Your job title should be atleast 2 characters 
+                    </div>
+
+                    <input 
+                    type="text" 
+                    name="tell" 
+                    placeholder="Type your phone number"
+                    class="input-field"
+                    #tell="ngModel"
+                    [ngClass]="{'is-invalid':tell.errors && tell.touched}"
+                    ngModel
+                    maxlength="10"
+                    minlength="10" 
+                    required
+                    >
+
+                    <div [hidden] = "!tell.errors?.required" class="invalid-feedback">
+                        Please type your phone number.
+                    </div>
+
+                    <div [hidden] = "!tell.errors?.minlength" class="invalid-feedback">
+                        Your phone Number is invalid 
+                    </div>
+
+                    <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Type e-mail address"
+                    ngModel class="input-field"
+                    #email="ngModel"
+                    [ngClass]="{'is-invalid':email.errors && email.touched}"
+                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                    ngModel
+                    required
+                    >
+                    
+                    <div [hidden] = "!email.errors?.required" class="invalid-feedback">
+                        Please type your emil.
+                    </div>
+
+                    <div [hidden] = "!email.errors?.pattern" class="invalid-feedback">
+                        Your e-mail address is invalid 
+                    </div>
+
+
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Type password"
+                    ngModel class="input-field">
+                    
+                    <input 
+                    type="password" 
+                    name="retypepassword"
+                    id="retypepassword" 
+                    placeholder="Re-type password"
+                    ngModel 
+                    class="input-field">
+                    
+                    <div class="reg-btn">
+                        <input routerLink="/join2" type="submit" value="save">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!--
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+<input type="checkbox" value="Builders">Builders
+
+
+</form>-->
+

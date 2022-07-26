@@ -1,0 +1,265 @@
+#signin-container {
+    max-width: 320px;
+    background: #fff;
+    color: #767577;
+    min-width: 100vw;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.signin-header{
+    background: #fd850d;
+    color: #fff;
+    height: 106px;
+    margin-bottom: 37px;
+}
+
+.signin-content {
+    width: 100%;
+    margin-top: 44px;
+}
+
+.signin-form {
+    text-align: center;
+    /* padding: 0 48px; */
+}
+
+.input-field {
+    background: #edf2f9;
+    width: 263px;
+    height: 42px;
+    text-indent: 21px;
+    font-weight: 300;
+    font-size: 15px;
+    border: none;
+    border-radius: 21px;
+    margin-bottom: 20px;
+}
+
+.forgot-check {
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+.forgot-check input {
+    width: 11px;
+    height: 11px;
+}
+
+.forgot-check span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #290a59;
+}
+
+.forgot-check span a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #9a9897;
+}
+
+.login-btn {
+    margin-bottom: 30px;
+}
+
+.login-btn input {
+    background: #fd850d;
+    color: #fff;
+    width: 263px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 21px;
+    margin-bottom: 20px;
+}
+
+.acc-query {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.query-header {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #9a9897;
+}
+
+.query-links {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #9a9897;
+}
+
+.query-links a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #513878;
+}
+
+.social-links-wrapper {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-link { 
+    display: inline-block;
+    border: 2px solid #c4c4c4;
+    border-radius: 100%;
+    width: 37.2px;
+    height: 37.2px;
+    /* padding: 8px; */
+    margin-right: 16px;
+}
+
+.social-link:last-child {
+    margin-right: 0;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 25px;
+}
+
+.toolbar {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    width: 100%;
+    height: 105px;
+    background: linear-gradient(#713642, #401852);
+    color: white;
+    vertical-align: middle;
+    padding: 40px 37px;
+    /* border: 1px solid red; */
+}
+
+.toolbar-trans {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    width: 100%;
+    height: 105px;
+    background: none;
+    color: white;
+    vertical-align: middle;
+    padding: 40px 37px;
+}
+
+.toolbar-orange {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 105px;
+    background: #fd850d;
+    color: white;
+    vertical-align: middle;
+    padding: 40px 37px;
+}
+
+
+.back-btn {
+    color: #fff;
+    margin-bottom: 24.8px;
+}
+
+.back-btn i {
+    font-weight: 300;
+    font-size: 29.2px;
+}
+
+
+.home-btn {
+    color: #fff;
+    margin-bottom: 24.8px;
+}
+
+.home-btn i {
+    font-weight: 300;
+    font-size: 29.2px;
+}
+
+.toolbar-title h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.nav-btn {
+    text-align: right;
+}
+
+.nav-btn button {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.nav-btn button i {
+    font-weight: 300;
+    font-size: 29.2px;
+}
+
+/* --------------- Start of side nav -----------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav-title {
+    position: absolute;
+    top: 0;
+    left: 56px;
+    color: #fd850d;
+    font-weight: 300;
+    font-size: 19px;
+    margin-right: 50px;
+    margin-top: 46px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 56px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 19px;
+    color: #767577;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #fd850d;
+}
+  
+.sidenav-link {
+    margin-top: 65px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 26px;
+    color: #fd850d;
+}
+
+  /* --------------- End of side nav -----------------*/

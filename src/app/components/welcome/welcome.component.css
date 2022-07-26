@@ -1,0 +1,69 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+	font-size: 16px;
+}
+
+body{
+	font-size: 0.875em;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#intro-container {
+    max-width: 320px;
+    /* background: linear-gradient(#f18931, #ec8429, #ee862c, #da7009, #e17815, #e57d1d, #401852, #290a59); */
+    background: linear-gradient(#f18931, #290a59);
+    color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 37.00px;
+    /* border: 1px solid red; */
+}
+
+.welcome-text{
+    margin-bottom: 54.00px;
+}
+
+.welcome-text h1 {
+    font-weight: 300;
+    font-size: 35.00;
+}
+
+.intro-text{
+    margin-bottom: 46.00px;
+}
+
+.intro-text h4 {
+    font-weight: 300;
+    font-size: 19.00px;
+    line-height: 25.00px;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+.action-buttons div button {
+    width: 266px;
+    height: 45px;
+    background: #fff;
+    color: #767577;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 23px;
+}
+
+.action-buttons div {
+    margin-bottom: 20px;
+}
+
+.action-buttons div:last-child {
+    margin-bottom: 0;
+}

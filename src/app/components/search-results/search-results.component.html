@@ -1,0 +1,67 @@
+
+<body>
+    <div id="mechanics-container">
+        <div class="toolbar">
+            <div class="home-btn">
+                <i routerLink="/home" class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="toolbar-title">
+                <h1>Results</h1>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <h3 class="sidenav-title">Explore</h3><hr>
+                Find by categoty
+                <a class="closebtn" (click)="closeNav()">&times;</a>
+                <a (click) = "getBuilders()" (click)="closeNav()" routerLink="/results" class="sidenav-link">Builders</a>
+                <a (click)="getMachanics()" (click)="closeNav()" routerLink="/results">Mechanics</a>
+                <a (click)="getFood()" (click)="closeNav()" routerLink="/results">Catering/Food</a>
+                <a (click)="getMusic()" (click)="closeNav()" routerLink="/results">Music</a>
+                <a (click)="getHair()" (click)="closeNav()" routerLink="/results">Hair & Beauty</a>
+                <a (click)="getPlumbing()" (click)="closeNav()" routerLink="/results">Plumbing</a>
+                <a (click)="getTransport()" (click)="closeNav" routerLink="/results">Transport</a>
+                <a (click)="getTutor()" (click)="closeNav()" routerLink="/results">Tutor</a><hr>
+                <a routerLink="/settings">Settings</a>
+            </div>
+            <div class="nav-btn">
+                <span style="font-size:30px;cursor:pointer" (click)="openNav()">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="mechanics-content">
+            <div class="mechanics-form-wrapper">
+                <form class="mechanics-form">
+                    <button type="submit" class="search-btn "><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input type="text" placeholder="Search" class="search-input">
+                    <span class="search-close fa fa-times"></span>
+                </form>
+            </div>
+
+            <div class="list-view" *ngFor="let serviceProvider of listOfServiceProviders | async">
+                <div class="comapny-card">
+                    <div class="company-image">image here</div>
+                    <div class="company-info">
+                        <div class="company-name">
+                            <h3>{{serviceProvider.businessName}}</h3>
+                        </div>
+                        <div class="company-contact">
+                            <h4> {{ serviceProvider.title}} {{serviceProvider.surname}} | {{serviceProvider.jobTitle}}</h4>
+                        </div>
+                        <div class="company-address">
+                            <h4>{{serviceProvider.businessAddress}}</h4>
+                        </div>
+                        <div class="company-phone">
+                            <h4>{{serviceProvider.cell}}</h4>
+                        </div>
+                        <div class="other-contacts">
+                            <h6 class="company-email">{{serviceProvider.email}}</h6>
+                            <button class="call-btn">Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

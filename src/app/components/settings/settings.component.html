@@ -1,0 +1,59 @@
+<div class="toolbar mb-4">
+    
+    <div class="home-btn">
+        <i routerLink="/home" class="fa fa-home" aria-hidden="true"></i>
+    </div>
+    <div class="toolbar-title">
+        <h1>Settings</h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <h3 class="sidenav-title">Explore</h3><hr>
+        Find by categoty
+        <a class="closebtn" (click)="closeNav()">&times;</a>
+        <a (click) = "getBuilders()" (click)="closeNav()" routerLink="/quickSearch/machanics" class="sidenav-link">Builders</a>
+        <a (click)="getMachanics()" (click)="closeNav()" routerLink="/quickSearch/machanics">Mechanics</a>
+        <a (click)="getFood()" (click)="closeNav()" routerLink="/quickSearch/machanics">Catering/Food</a>
+        <a (click)="getMusic()" (click)="closeNav()" routerLink="/quickSearch/machanics">Music</a>
+        <a (click)="getHair()" (click)="closeNav()" routerLink="/quickSearch/machanics">Hair & Beauty</a>
+        <a (click)="getPlumbing()" (click)="closeNav()" routerLink="/quickSearch/machanics">Plumbing</a>
+        <a (click)="getTransport()" (click)="closeNav" routerLink="/quickSearch/machanics">Transport</a>
+        <a (click)="getTutor()" (click)="closeNav()" routerLink="/quickSearch/machanics">Tutor</a><hr>
+        <a routerLink="/quickSearch/settings">Settings</a>
+        <a routerLink="/home">Home</a>
+    </div>
+    <div class="nav-btn">
+        <span style="font-size:30px;cursor:pointer" (click)="openNav()">
+            <i class="fa fa-align-right" aria-hidden="true"></i>
+        </span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">      
+        <ul class="col-md-12 list-unstyled">
+            <li routerLink="/accountsettings">
+                        <i style="margin-right: 4px;" class="fa fa-user-o"></i>Account <hr>
+            </li>
+
+            <li routerLink ="/notificationsettings">
+                
+                        <i class="fa fa-bell"></i> Notifications <hr>
+
+            </li>
+            <li routerLink="/changepassword">
+            
+                      <i class="fa fa-unlock-alt"></i>  Passwords <hr>
+                   
+            </li>
+            <li routerLink="/quickSearch/settings/language">
+               
+                       <i class="fa fa-comments"></i> Language <hr>
+                
+            </li>
+            <li routerLink="/payment">
+               
+                        Payment <hr>
+        
+            </li> 
+        </ul>
+    </div>
+</div>

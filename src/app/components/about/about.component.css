@@ -1,0 +1,95 @@
+#about-container {
+    max-width: 320px;
+    background-image: url("../../../assets/images/i_stock_1185838701.png") top right/contain no-repeat border-box;
+    color: #767577;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 40px;
+    /* border: 1px solid red; */
+}
+
+.back-btn {
+    margin-left: 37px;
+    color: #fff;
+    margin-bottom: 24.8px;
+}
+
+.back-btn i {
+    font-weight: 300;
+    font-size: 29.2px;
+}
+
+.description-alert {
+    background: rgba(252, 132, 12, 0.85);
+    color: #fff;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 24px;
+    padding-top: 13px;
+    padding-left: 26.6px;
+    padding-right: 26.6px;
+    padding-bottom: 13px;
+    border-radius: 9px;
+}
+
+.alert-header {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    margin-bottom: 4px;
+}
+
+.alert-info {
+    color: #edf2f9;
+    background: none;
+}
+
+.alert-info h4 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.about-content {
+    background: #fff;
+    width: 100%;
+    color: #767577;
+    border-radius: 22px 22px 0 0;
+    padding-top: 23px;
+    padding-left: 37px;
+    padding-right: 53px;
+    padding-bottom: 47px;
+}
+
+.main-header{
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.about-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+	font-size: 16px;
+}
+
+body{
+	font-size: 0.875em;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
